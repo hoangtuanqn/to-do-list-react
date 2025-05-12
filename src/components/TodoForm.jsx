@@ -14,6 +14,11 @@ export default function TodoForm() {
                   })
                 : actions.addTodo(text.trim());
             setText("");
+        } else {
+            actions.updateMessageTodo({
+                type: "error",
+                message: "Vui lòng nhập đầy đủ thông tin!",
+            });
         }
     };
     useEffect(() => {

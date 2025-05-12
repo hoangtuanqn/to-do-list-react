@@ -7,6 +7,7 @@ import {
     TOGGLE_TODO,
     START_EDIT_TODO,
     CLEAR_NOTIFICATION_TODO,
+    UPDATE_MESSAGE_TODO,
 } from "./actionTypes";
 
 export const initialState = {
@@ -99,6 +100,11 @@ export const todoReducer = (state, action) => {
             return {
                 ...state,
                 notification: null,
+            };
+        case UPDATE_MESSAGE_TODO:
+            return {
+                ...state,
+                notification: action.payload,
             };
         default:
             return state;

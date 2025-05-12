@@ -6,7 +6,7 @@ import { useTodo } from "./hooks/useTodo";
 export default function TodoList2() {
     const { actions } = useTodo();
     return (
-        <div className="w-4xl w-max-full mx-auto mt-20">
+        <div className="w-4xl w-max-full px-8 mx-auto mt-20">
             <h1 className="text-center font-bold text-2xl">Ứng dụng Todo List</h1>
             <div className="my-10">
                 <TodoForm />

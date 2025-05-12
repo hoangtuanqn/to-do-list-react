@@ -26,6 +26,7 @@ export function TodoProvider({ children }) {
             toogleTodo: (todo) => dispatch(actions.toogleTodo(todo)),
             startEditTodo: (id) => dispatch(actions.startEditTodo(id)),
             removeItemTodo: (uid) => dispatch(actions.removeItemTodo(uid)),
+            updateMessageTodo: (message) => dispatch(actions.updateMessageTodo(message)),
             clearTodos: () => dispatch(actions.clearTodos()),
             clearNotificationTodo: () => dispatch(actions.clearNotificationTodo()),
         },
